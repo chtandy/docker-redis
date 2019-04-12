@@ -11,3 +11,8 @@ services:
       - ./data:/data
       - ./redis.conf:/usr/local/etc/redis/redis.conf
     restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
