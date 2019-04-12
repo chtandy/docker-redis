@@ -3,7 +3,6 @@ services:
   docker_redis:
     hostname: docker_redis
     container_name: docker_redis
-    restart: unless-stopped
     image: redis
     command: redis-server /usr/local/etc/redis/redis.conf
     ports:
