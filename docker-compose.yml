@@ -3,7 +3,7 @@ services:
   docker_redis:
     hostname: docker_redis
     container_name: docker_redis
-    image: redis
+    image: redis:6.0.9
     command: redis-server /usr/local/etc/redis/redis.conf
     ports:
       - "6379:6379"
